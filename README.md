@@ -148,8 +148,8 @@ sns.catplot(
 <img width="1773" height="675" alt="image" src="https://github.com/user-attachments/assets/f174d068-5c9e-471f-a304-03790d147afe" />
 
 ```
-corr = dt.corr()
-sns.heatmap(corr, annot=True)
+corr = dt.select_dtypes(include=np.number).corr()
+sns.heatmap(corr,annot=True)
 ```
 
 <img width="630" height="487" alt="image" src="https://github.com/user-attachments/assets/292701bc-6575-4370-abde-1db80dd73845" />
